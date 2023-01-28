@@ -1,0 +1,51 @@
+dbt_demo:
+  outputs:
+    dev_eu:
+      schema: dbt_dev_eu
+      fixed_retries: 1
+      location: EU
+      method: oauth
+      priority: interactive
+      project: key-hope-278006
+      threads: 1
+      timeout_seconds: 300
+      type: bigquery
+      maximum_bytes_billed: 10000000000
+      execution_project: key-hope-278006
+    dev_us:
+      schema: dbt_dev_us
+      fixed_retries: 1
+      location: US
+      method: oauth
+      priority: interactive
+      project: key-hope-278006
+      threads: 1
+      timeout_seconds: 300
+      type: bigquery
+      maximum_bytes_billed: 10000000000
+      execution_project: key-hope-278006
+    prod_eu:
+      schema: dbt_prod_eu
+      fixed_retries: 1
+      location: EU
+      method: oauth
+      priority: interactive
+      project: key-hope-278006
+      threads: 1
+      timeout_seconds: 300
+      type: bigquery
+      maximum_bytes_billed: 10000000000
+      execution_project: key-hope-278006
+    prod_us:
+      schema: dbt_prod_us
+      fixed_retries: 1
+      location: US
+      method: oauth
+      priority: interactive
+      project: key-hope-278006
+      threads: 1
+      timeout_seconds: 300
+      type: bigquery
+      maximum_bytes_billed: 10000000000
+      execution_project: key-hope-278006
+  target: dev_eu
