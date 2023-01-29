@@ -26,5 +26,7 @@
    - 'dungeon-lord@key-hope-278006.iam.gserviceaccount.com'
    - '--timeout'
    - '2100s'
+ options:
+   logging: CLOUD_LOGGING_ONLY
  images:
  - 'gcr.io/$PROJECT_ID/dbt-service-test:$COMMIT_SHA'
