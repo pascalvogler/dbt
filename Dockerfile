@@ -1,5 +1,5 @@
 # copy in the latest dbt cli container
-FROM ghcr.io/dbt-labs/dbt-bigquery:1.4.0
+FROM ghcr.io/dbt-labs/dbt-bigquery:1.3.0
 USER root
 ENV APP_HOME /app
 ENV PORT 8080
