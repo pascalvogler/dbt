@@ -1,6 +1,6 @@
 ##authentication:
 
-gcloud auth application-default login --scopes=https://www.googleapis.com/auth/drive,https://www.googleapis.com/auth/bigquery
+```gcloud auth application-default login --scopes=https://www.googleapis.com/auth/drive,https://www.googleapis.com/auth/bigquery```
 
 ##example call:
 
@@ -13,7 +13,11 @@ on console:
 dbt run --target prod_eu --select tag:a --profiles-dir .
 ```
 
-##the --select logic:
+##Overall logic
+
+Via workflows each call must contain a target (see below) and a select. The target is used to determine the Location and the Select is freely determining which models are run. 
+
+##--select:
 The --select flag accepts one or more arguments. Each argument can be one of:
 1) a package name
 2) a model name
@@ -32,7 +36,7 @@ examples:
 | ```dbt run --select path/to/models``` | run models contained in path/to/models |
 | ```dbt run --select path/to/my_model.sql``` | run a specific model by its path |
 
-##the --target logic:
+##--target:
 There are only 4 targets:
 
 | Target | Description |
