@@ -47,8 +47,6 @@ def index():
             for argument in arguments.keys():
                 if argument not in DBT_PARAMETERS[dbt_command]:
                     return "Your command argument pairing is not supported by this dbt's version", 500
-                if argument == '--select' and not arguments[argument].startswith('tag:'):
-                    return "--select argument is present but it does not start with 'tag:'", 500
 
             if all(key in arguments for key in NECESSARY_ARGUMENTS):
                 print(f"{NECESSARY_ARGUMENTS} in call, all good")
