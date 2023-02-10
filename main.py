@@ -70,7 +70,7 @@ def index():
         return json.dumps(refined_logs), 200
 
     except:
-        return "unhandled server error. Please check the logs", 500
+        return "unhandled server error. Please check the logs.", 500
 
 
 def _create_exec_string(dbt_command_dict: dict) -> str:
