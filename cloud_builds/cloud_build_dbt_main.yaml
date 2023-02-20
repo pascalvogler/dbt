@@ -23,7 +23,7 @@
    - '--memory'
    - '512Mi'
    - '--service-account'
-   - 'dungeon-lord@key-hope-278006.iam.gserviceaccount.com'
+   - '${_SERVICE_ACCOUNT}'
    - '--timeout'
    - '2100s'
  options:
