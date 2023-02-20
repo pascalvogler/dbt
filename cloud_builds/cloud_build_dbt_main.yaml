@@ -23,7 +23,7 @@
    - '--memory'
    - '512Mi'
    - '--service-account'
-   - 'test-service-slave@gtm-566d6nz-ytm2m.iam.gserviceaccount.com'
+   - 'dungeon-lord@key-hope-278006.iam.gserviceaccount.com'
    - '--timeout'
    - '2100s'
  options:
