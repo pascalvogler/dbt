@@ -22,8 +22,6 @@
    - '80'
    - '--memory'
    - '512Mi'
-   - '--service-account'
-   - '${_SERVICE_ACCOUNT}'
    - '--timeout'
    - '2100s'
  options:
