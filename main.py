@@ -160,6 +160,7 @@ def as_dict(file_path, keep_comments=False):
         content_str = open(file_path, 'r').read()
         return json.loads(content_str)
 
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     PORT = int(os.getenv('PORT')) if os.getenv('PORT') else 8080
